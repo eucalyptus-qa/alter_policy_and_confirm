@@ -72,6 +72,9 @@ if( $given_user_name ne "" ){
 	$user_name = $ENV{'QA_MEMO_TEST_ACCOUNT_USER_NAME'};
 };
 
+$account_name = lc($account_name);
+$user_name = lc($user_name);
+
 print "\n";
 print "TEST ACCOUNT NAME [$account_name]\n";
 print "TEST USER NAME [$user_name]\n";
