@@ -1,3 +1,19 @@
+alter_policy_and_confirm
+========================
+
+## Description
+
+Alternate through 4 cases of EUARE user policy and verify the correctness
+
+## Procedure
+
+1. Full access is assigned to a newly create user, and test ifthis user can run instances.
+2. Full access is taken away from the user, and test if this user can run instances.
+3. A group is created with full access, user is assigned to the group, and test if the user can run instances.
+4. A group is created with all deny, user is assigned to the group after removed from its previous group, and test if the user can run instances.
+5. User is assigned to both groups above, which have conflictingpolicies, and test if the user can run instances
+
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
